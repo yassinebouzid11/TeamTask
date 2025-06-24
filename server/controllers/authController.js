@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 const register = async (req, res) => {
-  const { name, poste, email, role, password } = req.body;
+  const { name, email, role, password } = req.body;
 
   try {
     const duplicatedEmail = await User.findOne({ email }).exec();
@@ -16,7 +16,6 @@ const register = async (req, res) => {
 
     await User.create({
       name,
-      poste,
       email,
       role,
       password: hashedPassword,
@@ -52,6 +51,9 @@ const login = async (req, res) => {
     {
       userInfo: {
         id: foundedUser._id,
+        email: foundedUser.email,
+        name: foundedUser.name,
+        role: foundedUser.role,
       },
     },
     process.env.ACCESS_TOKEN_SECRET,
