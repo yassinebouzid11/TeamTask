@@ -17,7 +17,7 @@ export default function Sidebar() {
       </div>
       <nav className="space-y-2">
 
-          <Link
+          {role !== "admin" && <Link
             key={"/dashboard/tasks"}
             to={"/dashboard/tasks"}
             className={
@@ -27,7 +27,7 @@ export default function Sidebar() {
             }
           >
             Tasks
-          </Link>
+          </Link>}
           {role == "admin" && <Link
             key={"/dashboard/admin/users"}
             to={"/dashboard/admin/users"}

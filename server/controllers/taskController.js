@@ -5,7 +5,7 @@ const nodemailer = require('nodemailer');
 const getTasks = async (req, res) => {
   try {
     const tasks =
-      req.user.role === "manager" ||"admin"
+      req.user.role === "manager"
         ? await Task.find().populate("assignedTo", "name email")
         : await Task.find({ assignedTo: req.user.id });
     res.json(tasks);
