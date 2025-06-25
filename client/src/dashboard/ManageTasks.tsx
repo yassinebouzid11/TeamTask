@@ -1,4 +1,3 @@
-// src/pages/admin/ManageUsers.tsx
 import { useEffect, useState } from "react";
 import { Pencil, Plus } from "lucide-react";
 import Modal from "react-modal";
@@ -112,7 +111,7 @@ export default function ManageTasks() {
           onChange={(e) => setFilter(e.target.value)}
           className="border rounded cursor-pointer bg-gray-300 px-2 py-1"
         >
-          <option value="all">Afficher tout</option>
+          <option value="all">Show all</option>
           <option value="à faire">À faire</option>
           <option value="en cours">En cours</option>
           <option value="terminée">Terminée</option>
@@ -133,6 +132,7 @@ export default function ManageTasks() {
           <thead>
             <tr className="bg-muted text-left">
               <th className="p-3">Title</th>
+              <th className="p-3">Description</th>
               <th className="p-3">Assigned to</th>
               <th className="p-3">Status</th>
               <th className="p-3">Actions</th>
@@ -142,8 +142,9 @@ export default function ManageTasks() {
             {currentTasks.map((task: any) => (
               <tr key={task._id} className="border-t">
                 <td className="p-3 font-medium">{task.title}</td>
+                <td className="p-3 font-medium max-w-50">{task.description}</td>
                 <td className="p-3">{task.assignedTo.name}</td>
-                <td className="p-3">{task.status}</td>
+                <td className="p-3 ">{task.status}</td>
                 <td className="p-3 flex ">
                   <button
                     className="cursor-pointer flex border rounded px-2 py-1 bg-yellow-300"

@@ -70,7 +70,7 @@ export default function Login() {
               Signup
             </button>
           </div>
-          {error && <p className="text-red-500 text-sm">{error}</p>}
+          {error && <p className="text-red-500 text-sm">verify your informotion</p>}
         </form>
       </div>
     </div>

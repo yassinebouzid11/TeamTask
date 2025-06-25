@@ -2,10 +2,8 @@ const Task = require("../models/Task");
 
 const getTasks = async (req, res) => {
   try {
-    console.log(req.user);
-
     const tasks =
-      req.user.role === "manager"
+      req.user.role === "manager" ||"admin"
         ? await Task.find().populate("assignedTo", "name email")
         : await Task.find({ assignedTo: req.user.id });
     res.json(tasks);

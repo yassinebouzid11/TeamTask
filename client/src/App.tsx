@@ -6,6 +6,7 @@ import type { RootState } from "./redux/store";
 import Navbar from "./components/NavBar";
 import DashboardLayout from "./dashboard/DashboarLayout";
 import ManageTasks from "./dashboard/ManageTasks";
+import ManageUsers from "./admin/ManageUsers";
 
 function App() {
   const user = useSelector((state: RootState) => state.auth.user);
@@ -23,6 +24,7 @@ function App() {
 
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route index path="/dashboard/tasks" element={<ManageTasks />} />
+          <Route index path="/dashboard/admin/users" element={<ManageUsers />} />
         </Route>
       </Routes>
     </BrowserRouter>
