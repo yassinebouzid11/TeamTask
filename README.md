@@ -2,6 +2,8 @@
 
 TeamTask est une application MERN (MongoDB, Express, React, Node.js) permettant aux équipes de collaborer efficacement sur des taches, avec gestion des rôles (utilisateur / manager ), authentification sécurisée via JWT, gestion d'etat avec Redux Toolkit, et interface utilisateur moderne avec Tailwind CSS.
 
+re
+
 ---
 
 ## Fonctionnalités
@@ -16,7 +18,7 @@ TeamTask est une application MERN (MongoDB, Express, React, Node.js) permettant 
 - Filtrage des tâches par statut
 - Tableau de bord tache
 - Ajoute des taches
-- Tableau de bord utilisateur
+- Tableau de bord utilisateur pour l'admin 
 - UI avec Tailwind CSS
 
 ---
@@ -76,7 +78,7 @@ Ajoutez ici :
 
 - 🎥 Une vidéo de démo ou
 - 📷 Des captures d'écran (tableau de bord, formulaire, etc.)
-![alt text](client/public/userImage.png)
+
 ---
 
 ## Licence
