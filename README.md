@@ -10,10 +10,11 @@ re
 
 - Authentification JWT (inscription, connexion, déconnexion)
 - Middleware de sécurité :
-  `hpp`: Contre les requettes http pollué,
-  `express-mongo-sanitize` : Contre les injections SQL
+  `hpp` Contre les requettes http pollué,
+  `express-mongo-sanitize` Contre les injections SQL
 - Gestion d'etat avec : `Redux Toolkit`
 - Gestion des rôles : `user`, `manager`
+- Notifié avec email les utilisateur à propos leur nouveau taches avec : `nodemailer` 
 - CRUD des tâches
 - Filtrage des tâches par statut
 - Tableau de bord tache
