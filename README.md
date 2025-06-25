@@ -3,9 +3,11 @@
 TeamTask est une application MERN (MongoDB, Express, React, Node.js) permettant aux équipes de collaborer efficacement sur des taches, avec gestion des rôles (utilisateur / manager ), authentification sécurisée via JWT, gestion d'etat avec Redux Toolkit, et interface utilisateur moderne avec Tailwind CSS.
 
 ## Compte admin :
-pour accedé comme admin et visualiser la liste des utilisateur : 
+
+pour accedé comme admin et visualiser la liste des utilisateur :
+
 -email: teamtask.admin@gmail.com
--password: admin 
+-password: admin
 
 ---
 
@@ -17,12 +19,12 @@ pour accedé comme admin et visualiser la liste des utilisateur :
   `express-mongo-sanitize` Contre les injections SQL
 - Gestion d'etat avec : `Redux Toolkit`
 - Gestion des rôles : `user`, `manager`
-- Notifié avec email les utilisateur à propos leur nouveau taches avec : `nodemailer` 
+- Notifié avec email les utilisateur à propos leur nouveau taches avec : `nodemailer`
 - CRUD des tâches
 - Filtrage des tâches par statut
 - Tableau de bord tache
 - Ajoute des taches
-- Tableau de bord utilisateur pour l'admin 
+- Tableau de bord utilisateur pour l'admin
 - UI avec Tailwind CSS
 
 ---
@@ -32,7 +34,7 @@ pour accedé comme admin et visualiser la liste des utilisateur :
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/votre-utilisateur/teamtask.git
+git clone https://github.com/yassinebouzid11/TeamTask.git
 cd teamtask
 ```
 
@@ -79,13 +81,13 @@ npm run dev
 ## Capture
 
 1. voici la page signup:
-![alt text](client/public/singup.png)
+   ![alt text](client/public/singup.png)
 
 2. voici la page login:
-![alt text](client/public/login.png)
+   ![alt text](client/public/login.png)
 
 3. connecter en temp que manager, voici la liste des taches:
-![alt text](client/public/manager.png)
+   ![alt text](client/public/manager.png)
 
 3.1. voici le filtre des status:
 ![alt text](client/public/show-filter.png)
@@ -94,6 +96,7 @@ npm run dev
 ![alt text](client/public/filtrer.png)
 
 3.4. voici le boutton "add a task" qui est responsable d'afficher la formulaire d'ajout:
+
 ![alt text](client/public/click-add.png)
 
 3.5. voici le formulaire d'ajout:
@@ -112,14 +115,13 @@ npm run dev
 ![alt text](client/public/list-status.png)
 
 5. connecter en temp que admin, voici la liste des utilisateurs:
-![alt text](client/public/admin.png)
+   ![alt text](client/public/admin.png)
 
 5.1. filtre les utilisateurs par role :
 ![alt text](client/public/filter-admin.png)
 
 6. en cliquant sur le profile on peut deconnecté :
-![alt text](client/public/logout.png)
-
+   ![alt text](client/public/logout.png)
 
 ---
 
