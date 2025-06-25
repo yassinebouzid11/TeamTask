@@ -61,7 +61,7 @@ npm run dev
 
 ---
 
-## ✅ Stack technique
+## Stack technique
 
 - **Frontend** : React + Vite + Tailwind CSS + Redux Toolkit
 - **Backend** : Node.js + Express + MongoDB + Mongoose
@@ -70,13 +70,13 @@ npm run dev
 
 ---
 
-## 📸 Démo
+## Démo
 
 Ajoutez ici :
 
 - 🎥 Une vidéo de démo ou
 - 📷 Des captures d'écran (tableau de bord, formulaire, etc.)
-
+![alt text](client/public/userImage.png)
 ---
 
 ## Licence
